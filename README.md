@@ -1,5 +1,5 @@
-[![Version](http://cocoapod-badges.herokuapp.com/v/iOS-GPX-Framework/badge.png)](http://cocoadocs.org/docsets/iOS-KML-Framework)
-[![Platform](http://cocoapod-badges.herokuapp.com/p/iOS-GPX-Framework/badge.png)](http://cocoadocs.org/docsets/iOS-KML-Framework)
+[![Version](http://cocoapod-badges.herokuapp.com/v/iOS-GPX-Framework/badge.png)](http://cocoadocs.org/docsets/iOS-GPX-Framework)
+[![Platform](http://cocoapod-badges.herokuapp.com/p/iOS-GPX-Framework/badge.png)](http://cocoadocs.org/docsets/iOS-GPX-Framework)
  
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://opensource.org/licenses/mit-license.php)
 [![Build](https://travis-ci.org/Pierre-Loup/iOS-GPX-Framework.svg)](https://travis-ci.org/Pierre-Loup/iOS-GPX-Framework)
@@ -18,7 +18,7 @@ This fork is the "iOS-GPX-Framework" pod's source repo. It has been created to m
 Installation
 ---------------------------------
 
-iOS-KML-Framework is available through [CocoaPods](http://cocoapods.org), to install
+iOS-GPX-Framework is available through [CocoaPods](http://cocoapods.org), to install
 it simply add the following line to your Podfile:
 
 ```ruby
@@ -91,6 +91,6 @@ Cocoapod version created by [@Pierre-Loup](https://github.com/Pierre-Loup/)
 
 ## License
 
-iOS-KML-Framework is available under the MIT license. See the LICENSE file for more info.
+iOS-GPX-Framework is available under the MIT license. See the LICENSE file for more info.
 
 it uses [TBXML](http://tbxml.co.uk/TBXML/TBXML_Free.html) Copyright (c) 2009 Tom Bradley
