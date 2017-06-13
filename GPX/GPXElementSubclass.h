@@ -7,7 +7,7 @@
 //
 
 #import "GPXElement.h"
-#import "TBXML.h"
+#import <TBXML/TBXML.h>
 
 @interface GPXElement ()
 
