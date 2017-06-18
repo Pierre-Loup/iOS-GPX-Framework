@@ -34,6 +34,9 @@
 
 - (double)speed
 {
+    if (!_speedValue) {
+        return -1;
+    }
     return [GPXType decimal:_speedValue];
 }
 
@@ -44,6 +47,9 @@
 
 - (double)course
 {
+    if (!_courseValue) {
+        return -1;
+    }
     return [GPXType decimal:_courseValue];
 }
 
