@@ -51,7 +51,7 @@
 
 #pragma mark - Public methods
 
-- (GPXTrackPoint *)newTrackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
+- (GPXTrackPoint *)newTrackpointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXTrackPoint *trackpoint = [GPXTrackPoint trackpointWithLatitude:latitude longitude:longitude];
     [self addTrackpoint:trackpoint];

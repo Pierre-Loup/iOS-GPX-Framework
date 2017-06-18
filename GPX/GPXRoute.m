@@ -121,7 +121,7 @@
     }
 }
 
-- (GPXRoutePoint *)newRoutepointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
+- (GPXRoutePoint *)newRoutepointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXRoutePoint *routepoint = [GPXRoutePoint routepointWithLatitude:latitude longitude:longitude];
     [self addRoutepoint:routepoint];

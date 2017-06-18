@@ -19,6 +19,6 @@
  @param longitude The longitude of the point.
  @return A newly created trackpoint element.
  */
-+ (GPXTrackPoint *)trackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
++ (GPXTrackPoint *)trackpointWithLatitude:(double)latitude longitude:(double)longitude;
 
 @end

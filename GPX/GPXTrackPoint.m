@@ -13,7 +13,7 @@
 
 #pragma mark - Instance
 
-+ (GPXTrackPoint *)trackpointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
++ (GPXTrackPoint *)trackpointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXTrackPoint *trackpoint = [GPXTrackPoint new];
     trackpoint.latitude = latitude;

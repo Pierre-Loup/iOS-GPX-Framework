@@ -22,7 +22,7 @@
 /// ---------------------------------
 
 /** Elevation (in meters) of the point. */
-@property (nonatomic, assign) CGFloat elevation;
+@property (nonatomic, assign) double elevation;
 
 /** Creation/modification timestamp for element. 
     Date and time in are in Univeral Coordinated Time (UTC), not local time! 
@@ -31,10 +31,10 @@
 @property (strong, nonatomic) NSDate *time;
 
 /** Magnetic variation (in degrees) at the point */
-@property (nonatomic, assign) CGFloat magneticVariation;
+@property (nonatomic, assign) double magneticVariation;
 
 /** Height (in meters) of geoid (mean sea level) above WGS84 earth ellipsoid. As defined in NMEA GGA message. */
-@property (nonatomic, assign) CGFloat geoidHeight;
+@property (nonatomic, assign) double geoidHeight;
 
 /** The GPS name of the waypoint. This field will be transferred to and from the GPS. 
     GPX does not place restrictions on the length of this field or the characters contained in it. 
@@ -68,16 +68,16 @@
 @property (nonatomic, assign) NSInteger satellites;
 
 /** Horizontal dilution of precision. */
-@property (nonatomic, assign) CGFloat horizontalDilution;
+@property (nonatomic, assign) double horizontalDilution;
 
 /** Vertical dilution of precision. */
-@property (nonatomic, assign) CGFloat verticalDilution;
+@property (nonatomic, assign) double verticalDilution;
 
 /** Position dilution of precision. */
-@property (nonatomic, assign) CGFloat positionDilution;
+@property (nonatomic, assign) double positionDilution;
 
 /** Number of seconds since last DGPS update. */
-@property (nonatomic, assign) CGFloat ageOfDGPSData;
+@property (nonatomic, assign) double ageOfDGPSData;
 
 /** ID of DGPS station used in differential correction. */
 @property (nonatomic, assign) NSInteger DGPSid;
@@ -86,10 +86,10 @@
 @property (strong, nonatomic) GPXExtensions *extensions;
 
 /** The latitude of the point. Decimal degrees, WGS84 datum. */
-@property (nonatomic, assign) CGFloat latitude;
+@property (nonatomic, assign) double latitude;
 
 /** The longitude of the point. Decimal degrees, WGS84 datum. */
-@property (nonatomic, assign) CGFloat longitude;
+@property (nonatomic, assign) double longitude;
 
 
 /// ---------------------------------
@@ -101,7 +101,7 @@
  @param longitude The longitude of the point.
  @return A newly created waypoint element.
  */
-+ (GPXWaypoint *)waypointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
++ (GPXWaypoint *)waypointWithLatitude:(double)latitude longitude:(double)longitude;
 
 
 /// ---------------------------------

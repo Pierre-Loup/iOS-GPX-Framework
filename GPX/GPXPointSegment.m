@@ -46,7 +46,7 @@
 
 #pragma mark - Public methods
 
-- (GPXPoint *)newPointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
+- (GPXPoint *)newPointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXPoint *point = [GPXPoint pointWithLatitude:latitude longitude:longitude];
     [self addPoint:point];

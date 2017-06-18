@@ -19,41 +19,41 @@ typedef NS_ENUM(NSInteger, GPXFix) {
  */
 @interface GPXType : NSObject
 
-/** Return the CGFloat object from a given string.
- @param value The string which to convert CGFloat. A value ≥−90 and ≤90.
+/** Return the double object from a given string.
+ @param value The string which to convert double. A value ≥−90 and ≤90.
  @return A CGFloat from a value.
  */
-+ (CGFloat)latitude:(NSString *)value;
++ (double)latitude:(NSString *)value;
 
-/** Return the NSString object from a given CGFloat.
- @param latitude The CGFloat which to convert NSString. A value ≥−90 and ≤90.
+/** Return the NSString object from a given double.
+ @param latitude The double which to convert NSString. A value ≥−90 and ≤90.
  @return A NSString from a latitude.
  */
-+ (NSString *)valueForLatitude:(CGFloat)latitude;
++ (NSString *)valueForLatitude:(double)latitude;
 
-/** Return the CGFloat object from a given string.
- @param value The string which to convert CGFloat. A value ≥−180 and ≤180.
+/** Return the double object from a given string.
+ @param value The string which to convert double. A value ≥−180 and ≤180.
  @return A CGFloat from a value.
  */
-+ (CGFloat)longitude:(NSString *)value;
++ (double)longitude:(NSString *)value;
 
-/** Return the NSString object from a given CGFloat.
- @param longitude The CGFloat which to convert NSString. A value ≥−180 and ≤180.
+/** Return the NSString object from a given double.
+ @param longitude The double which to convert NSString. A value ≥−180 and ≤180.
  @return A NSString from a longitude.
  */
-+ (NSString *)valueForLongitude:(CGFloat)longitude;
++ (NSString *)valueForLongitude:(double)longitude;
 
-/** Return the CGFloat object from a given string.
- @param value The string which to convert CGFloat. A value ≥0 and ≤360.
+/** Return the double object from a given string.
+ @param value The string which to convert double. A value ≥0 and ≤360.
  @return A CGFloat from a value.
  */
-+ (CGFloat)degress:(NSString *)value;
++ (double)degress:(NSString *)value;
 
-/** Return the NSString object from a given CGFloat.
- @param degress The CGFloat which to convert NSString. A value ≥0 and ≤360.
+/** Return the NSString object from a given double.
+ @param degress The double which to convert NSString. A value ≥0 and ≤360.
  @return A NSString from a degress.
  */
-+ (NSString *)valueForDegress:(CGFloat)degress;
++ (NSString *)valueForDegress:(double)degress;
 
 /** Return the GPXFix from a given string.
  @param value The string which to convert GPXFix.
@@ -79,17 +79,17 @@ typedef NS_ENUM(NSInteger, GPXFix) {
  */
 + (NSString *)valueForDgpsStation:(NSInteger)dgpsStation;
 
-/** Return the CGFloat object from a given string.
- @param value The string which to convert CGFloat.
- @return A CGFloat from a value.
+/** Return the double object from a given string.
+ @param value The string which to convert double.
+ @return A double from a value.
  */
-+ (CGFloat)decimal:(NSString *)value;
++ (double)decimal:(NSString *)value;
 
-/** Return the NSString object from a given CGFloat.
- @param decimal The CGFloat which to convert NSString.
+/** Return the NSString object from a given double.
+ @param decimal The double which to convert NSString.
  @return A NSString from a decimal.
  */
-+ (NSString *)valueForDecimal:(CGFloat)decimal;
++ (NSString *)valueForDecimal:(double)decimal;
 
 /** Return the NSDate object from a given string.
  

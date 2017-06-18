@@ -19,6 +19,6 @@
  @param longitude The longitude of the point.
  @return A newly created routepoint element.
  */
-+ (GPXRoutePoint *)routepointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
++ (GPXRoutePoint *)routepointWithLatitude:(double)latitude longitude:(double)longitude;
 
 @end
