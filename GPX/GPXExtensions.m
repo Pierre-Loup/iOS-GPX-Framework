@@ -9,7 +9,13 @@
 #import "GPXExtensions.h"
 #import "GPXElementSubclass.h"
 
-@implementation GPXExtensions
+@implementation GPXExtensions {
+    NSString *_speedValue;
+    NSString *_courseValue;
+}
+
+@synthesize speed = _speed;
+@synthesize course = _course;
 
 #pragma mark - Instance
 
@@ -17,6 +23,8 @@
 {
     self = [super initWithXMLElement:element parent:parent];
     if (self) {
+        _speedValue = [self textForSingleChildElementNamed:@"speed" xmlElement:element];
+        _courseValue = [self textForSingleChildElementNamed:@"course" xmlElement:element];
     }
     return self;
 }
@@ -24,7 +32,25 @@
 
 #pragma mark - Public methods
 
+- (double)speed
+{
+    return [GPXType valueForDecimal:_speedValue];
+}
 
+- (void)setSpeed:(double)speed
+{
+    _speedValue = [GPXType valueForDecimal:speed];
+}
+
+- (double)course
+{
+    return [GPXType valueForDecimal:_courseValue];
+}
+
+- (void)setCourse:(double)course
+{
+    _courseValue = [GPXType valueForDecimal:course];
+}
 
 #pragma mark - tag
 
@@ -40,6 +66,8 @@
 {
     [super addChildTagToGpx:gpx indentationLevel:indentationLevel];
     
+    [self gpx:gpx addPropertyForValue:_speedValue tagName:@"speed" indentationLevel:indentationLevel];
+    [self gpx:gpx addPropertyForValue:_courseValue tagName:@"course" indentationLevel:indentationLevel];
 }
 
 @end

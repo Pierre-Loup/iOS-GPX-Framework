@@ -13,4 +13,10 @@
  */
 @interface GPXExtensions : GPXElement
 
+/** Waypoint speed in meters per second. */
+@property (nonatomic, assign) double speed;
+
+/** Waypoint travel direction. */
+@property (nonatomic, assign) double course;
+
 @end

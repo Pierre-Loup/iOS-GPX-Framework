@@ -247,7 +247,7 @@
     _DGPSidValue = [GPXType valueForDgpsStation:DGPSid];
 }
 
-- (CGFloat)latitude
+- (double)latitude
 {
     return [GPXType latitude:_latitudeValue];
 }
