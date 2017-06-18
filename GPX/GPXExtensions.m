@@ -34,7 +34,7 @@
 
 - (double)speed
 {
-    return [GPXType valueForDecimal:_speedValue];
+    return [GPXType decimal:_speedValue];
 }
 
 - (void)setSpeed:(double)speed
@@ -44,7 +44,7 @@
 
 - (double)course
 {
-    return [GPXType valueForDecimal:_courseValue];
+    return [GPXType decimal:_courseValue];
 }
 
 - (void)setCourse:(double)course
