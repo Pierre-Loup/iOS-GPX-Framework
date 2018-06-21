@@ -19,4 +19,7 @@
 /** Waypoint travel direction. */
 @property (nonatomic, assign) double course;
 
+/** Waypoint activity. */
+@property (strong, nonatomic) NSString *activity;
+
 @end

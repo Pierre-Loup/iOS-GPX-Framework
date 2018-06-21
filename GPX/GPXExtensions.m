@@ -16,6 +16,7 @@
 
 @synthesize speed = _speed;
 @synthesize course = _course;
+@synthesize activity = _activity;
 
 #pragma mark - Instance
 
@@ -25,6 +26,7 @@
     if (self) {
         _speedValue = [self textForSingleChildElementNamed:@"speed" xmlElement:element];
         _courseValue = [self textForSingleChildElementNamed:@"course" xmlElement:element];
+        _activity = [self textForSingleChildElementNamed:@"activity" xmlElement:element];
     }
     return self;
 }
@@ -74,6 +76,7 @@
     
     [self gpx:gpx addPropertyForValue:_speedValue tagName:@"speed" indentationLevel:indentationLevel];
     [self gpx:gpx addPropertyForValue:_courseValue tagName:@"course" indentationLevel:indentationLevel];
+    [self gpx:gpx addPropertyForValue:_activity tagName:@"activity" indentationLevel:indentationLevel];
 }
 
 @end
