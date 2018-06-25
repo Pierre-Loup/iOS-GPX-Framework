@@ -33,7 +33,7 @@
  @param longitude The longitude of the point.
  @return A newly created point element.
  */
-- (GPXPoint *)newPointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude;
+- (GPXPoint *)newPointWithLatitude:(double)latitude longitude:(double)longitude;
 
 
 /// ---------------------------------

@@ -36,7 +36,7 @@
     return self;
 }
 
-+ (GPXPoint *)pointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
++ (GPXPoint *)pointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXPoint *point = [GPXPoint new];
     point.latitude = latitude;
@@ -47,12 +47,12 @@
 
 #pragma mark - Public methods
 
-- (CGFloat)elevation
+- (double)elevation
 {
     return [GPXType decimal:_elevationValue];
 }
 
-- (void)setElevation:(CGFloat)elevation
+- (void)setElevation:(double)elevation
 {
     _elevationValue = [GPXType valueForDecimal:elevation];
 }
@@ -67,22 +67,22 @@
     _timeValue = [GPXType valueForDateTime:time];
 }
 
-- (CGFloat)latitude
+- (double)latitude
 {
     return [GPXType latitude:_latitudeValue];
 }
 
-- (void)setLatitude:(CGFloat)latitude
+- (void)setLatitude:(double)latitude
 {
     _latitudeValue = [GPXType valueForLatitude:latitude];
 }
 
-- (CGFloat)longitude
+- (double)longitude
 {
     return [GPXType longitude:_longitudeValue];
 }
 
-- (void)setLongitude:(CGFloat)longitude
+- (void)setLongitude:(double)longitude
 {
     _longitudeValue = [GPXType valueForLongitude:longitude];
 }

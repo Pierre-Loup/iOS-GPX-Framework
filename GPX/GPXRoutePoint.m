@@ -13,7 +13,7 @@
 
 #pragma mark - Instance
 
-+ (GPXRoutePoint *)routepointWithLatitude:(CGFloat)latitude longitude:(CGFloat)longitude
++ (GPXRoutePoint *)routepointWithLatitude:(double)latitude longitude:(double)longitude
 {
     GPXRoutePoint *routepoint = [GPXRoutePoint new];
     routepoint.latitude = latitude;

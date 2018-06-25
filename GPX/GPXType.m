@@ -10,12 +10,12 @@
 
 @implementation GPXType
 
-+ (CGFloat)latitude:(NSString *)value
++ (double)latitude:(NSString *)value
 {
     @try {
-        CGFloat f = [value floatValue];
-        if (-90.f <= f && f <= 90.f) {
-            return f;
+        double d = [value doubleValue];
+        if (-90.f <= d && d <= 90.f) {
+            return d;
         }
     }
     @catch (NSException *exception) {
@@ -24,7 +24,7 @@
     return 0.f;
 }
 
-+ (NSString *)valueForLatitude:(CGFloat)latitude
++ (NSString *)valueForLatitude:(double)latitude
 {
     if (-90.f <= latitude && latitude <= 90.f) {
         return [NSString stringWithFormat:@"%f", latitude];
@@ -33,12 +33,12 @@
     return @"0";
 }
 
-+ (CGFloat)longitude:(NSString *)value
++ (double)longitude:(NSString *)value
 {
     @try {
-        CGFloat f = [value floatValue];
-        if (-180.f <= f && f <= 180.f) {
-            return f;
+        double d = [value doubleValue];
+        if (-180.f <= d && d <= 180.f) {
+            return d;
         }
     }
     @catch (NSException *exception) {
@@ -47,7 +47,7 @@
     return 0.f;
 }
 
-+ (NSString *)valueForLongitude:(CGFloat)longitude
++ (NSString *)valueForLongitude:(double)longitude
 {
     if (-180.f <= longitude && longitude <= 180.f) {
         return [NSString stringWithFormat:@"%f", longitude];
@@ -56,12 +56,12 @@
     return @"0";
 }
 
-+ (CGFloat)degress:(NSString *)value
++ (double)degress:(NSString *)value
 {
     @try {
-        CGFloat f = [value floatValue];
-        if (0.f <= f && f <= 360.f) {
-            return f;
+        double d = [value doubleValue];
+        if (0.f <= d && d <= 360.f) {
+            return d;
         }
     }
     @catch (NSException *exception) {
@@ -70,7 +70,7 @@
     return 0.f;    
 }
 
-+ (NSString *)valueForDegress:(CGFloat)degress
++ (NSString *)valueForDegress:(double)degress
 {
     if (0.0f <= degress && degress <= 360.f) {
         return [NSString stringWithFormat:@"%f", degress];
@@ -138,11 +138,11 @@
     return @"0";
 }
 
-+ (CGFloat)decimal:(NSString *)value
++ (double)decimal:(NSString *)value
 {
     @try {
-        CGFloat f = [value floatValue];
-        return f;
+        double d = [value doubleValue];
+        return d;
     }
     @catch (NSException *exception) {
     }
@@ -150,7 +150,7 @@
     return 0;
 }
 
-+ (NSString *)valueForDecimal:(CGFloat)decimal
++ (NSString *)valueForDecimal:(double)decimal
 {
     return [NSString stringWithFormat:@"%f", decimal];
     

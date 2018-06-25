@@ -19,16 +19,16 @@
 /// ---------------------------------
 
 /** The minimum latitude. */
-@property (nonatomic, assign) CGFloat minLatitude;
+@property (nonatomic, assign) double minLatitude;
 
 /** The minimum longitude. */
-@property (nonatomic, assign) CGFloat minLongitude;
+@property (nonatomic, assign) double minLongitude;
 
 /** The maximum latitude. */
-@property (nonatomic, assign) CGFloat maxLatitude;
+@property (nonatomic, assign) double maxLatitude;
 
 /** The maximum longitude. */
-@property (nonatomic, assign) CGFloat maxLongitude;
+@property (nonatomic, assign) double maxLongitude;
 
 
 /// ---------------------------------
@@ -42,6 +42,6 @@
  @param maxLongitude The maximum longitude.
  @return A newly created bounds element.
  */
-+ (GPXBounds *)boundsWithMinLatitude:(CGFloat)minLatitude minLongitude:(CGFloat)minLongitude maxLatitude:(CGFloat)maxLatitude maxLongitude:(CGFloat)maxLongitude;
++ (GPXBounds *)boundsWithMinLatitude:(double)minLatitude minLongitude:(double)minLongitude maxLatitude:(double)maxLatitude maxLongitude:(double)maxLongitude;
 
 @end
